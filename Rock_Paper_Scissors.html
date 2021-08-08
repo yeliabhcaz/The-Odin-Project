@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors Game</title>
+        <meta charset="UTF-8"/>
+    </head> 
+    <body>
+        <script>
+            const arr = ['rock','paper','scissors']
+            function computerPlay(){
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+            function playRound(user, cpu){
+                user = arr.indexOf(user);
+                cpu = arr.indexOf(cpu);
+                if (user == cpu){
+                    return 'Tie'
+                }
+                else if (user == arr.length - 1 && cpu == 0){
+                    return 'Computer Wins :('
+                }
+                else if (cpu == arr.length - 1 && user == 0) {
+                    return 'You Win!'
+                }
+                if (user > cpu){
+                    return 'You Win!'
+                }
+                else{
+                    return 'Computer Wins :('
+                }
+            }
+            let n = 0
+            ans = prompt("Want to play a game of rock paper scissors? (Y/N)")
+            if (ans.toLowerCase() == 'y'){
+                while(n == 0){
+                    userChoice = prompt("What's your choice? Rock, Paper, or Scissors?");
+                    computerChoice = computerPlay();
+                    alert(playRound(userChoice, computerChoice));
+                    ans = prompt("Want to play again? (Y/N)");
+                    if (ans.toLowerCase() == 'y') {
+                        n = 0;
+                    }
+                    else {
+                        n = 1;
+                    }
+                }
+            }
+            else{
+                pass;
+            }
+        </script>
+    </body>
+</html>

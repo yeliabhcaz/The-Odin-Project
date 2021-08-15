@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.header {
+    margin: 35px 0px 0px 35px;
+    order: 1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+.score {
+    margin-top: 30px;
+    order: 2;
+}
+
+.scoreboard{
+    font-weight: 200px;
+    text-decoration-line: underline;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.scores {
+    padding: 5px 0px 0px 0px;
+    font-size: 20px;   
+}
+
+.user {
+    display: flex;
+}
+
+.cpu {
+    display: flex;
+}
+
+#user-tag {
+    margin-right: 40px;
+}
+
+#cpu-tag {
+    margin-right: 39px;
+}
+
+.user-selection {
+    order: 3;
+
+}

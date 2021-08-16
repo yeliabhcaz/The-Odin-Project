@@ -7,7 +7,7 @@
         <meta name="robots" content="index,follow"> 
         <meta name="viewport" content="width = device-width, initial-scale = 1">
         <link rel="icon" href="">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <link rel="stylesheet" href="style.css">
     </head> 
 
@@ -23,11 +23,11 @@
                     <div class="scores">
                         <div class="user">
                             <h4 id="user-tag">User: </h4>
-                            <h4 id="user-score">5</h4>
+                            <h4 id="user-score">0</h4>
                         </div>
                         <div class="cpu">
                             <h4 id="cpu-tag">CPU: </h4>
-                            <h4 id="cpu-score">5</h4>
+                            <h4 id="cpu-score">0</h4>
                         </div>
                     </div>  
                 </div>
@@ -36,12 +36,17 @@
         </main>
         <footer>
             <div class="user-selection">
-                <h3 class="selection-heading">Make Your Selection</h3>
-                <button class="rock"></button>
-                <button class="paper"></button>
-                <button class="scissor"></button>
+                <h3 id="selection-heading">Make Your Selection</h3>
+                <button id="rock"></button>
+                <button id="paper"></button>
+                <button id="scissors"></button>
             </div>
+           
+    
             <!--Copyright info, social links, other contact info-->
         </footer>
+        <div class="winner-box">
+            <h4 id="winner"></h4>
+        </div>
     </body>
 </html>
